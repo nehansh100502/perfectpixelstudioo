@@ -7,15 +7,15 @@
 
 .section-title{
     /* font-size: 4.5rem ;*/
-    font-size: 60px;
+    font-size: 40px;
     margin-bottom: 10px;
-    color: #f206d3;
+    color: #f206af;
     animation: zoomIn 1.2s ease-in-out; /* Zoom-in effect for the title */
 }
 
 .section-description {
     font-size: 1.2rem;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
     color: #aaa;
     animation: fadeInDown 1s ease-in-out; /* Fade-in-down effect for the description */
 }
@@ -23,7 +23,7 @@
 /* Clients Grid */
 .clients-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -68,7 +68,7 @@
     }
 
     .clients-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(90px, 3fr));
     }
 }
 
@@ -82,7 +82,7 @@
     }
 
     .client-logo {
-        padding: 15px;
+        padding: 2px;
     }
 
     .client-logo img {

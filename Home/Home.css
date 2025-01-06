@@ -35,7 +35,7 @@ body {
   color: #f4ecf4;
   text-align: center;
   padding: 12px;
-  font-weight: lighter;
+  font-weight: bold;
   font-style: italic;
   text-decoration: none;
   font-size: 18px;
@@ -47,7 +47,7 @@ body {
 }
 
 .nav-links a.active {
-  background-color: #fb06fb;
+  background-color: #fb06b1;
   color: #fff;
 }
 

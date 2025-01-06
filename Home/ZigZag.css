@@ -35,7 +35,7 @@
 }
 
 .xlarge-font {
-    font-size: 48px; /* Reduced size for mobile screens */
+    font-size: 35px; /* Reduced size for mobile screens */
     line-height: 1.4; /* Improve readability for larger text */
     text-align: center;
 }

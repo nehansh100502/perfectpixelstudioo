@@ -6,13 +6,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./Home/Home.css">
-  <link rel="stylesheet" href="./AboutUs/about.css"
-  <link rel="stylesheet" href="./Home/animatedBackground.css">
-  <link rel="stylesheet" href="./ReviewCard/Review.css"
-  <link rel="stylesheet" href="./Home/ZigZag.css"
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./AboutUs/about.css" <link rel="stylesheet" href="./Home/animatedBackground.css">
+  <link rel="stylesheet" href="./ReviewCard/Review.css" <link rel="stylesheet" href="./Home/ZigZag.css" <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
+<style>
+  .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .mySlides img {
+    width: 100%;
+    /* Ensure images fit the container */
+    vertical-align: middle;
+  }
+  /* Add styles for the navigation dots */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+  }
+
+  .dot.active {
+    background-color: #717171;
+  }
+</style>
+
 <body>
   <!-- Header -->
   <div class="header">
@@ -27,90 +55,117 @@
   </div>
 
   <!-- Slideshow -->
+  <!-- Slideshow -->
   <div class="slideshow-container">
-    <img src="../Home/slide001.jpeg" alt="Slide 1">
-    <img src="../Home/slide02.jpeg" alt="Slide 2">
-    <img src="../Home/slide03.jpeg" alt="Slide 3">
+    <div class="mySlides">
+      <img src="../Home/slide001.jpeg" alt="Slide 1" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="../Home/slide02.jpeg" alt="Slide 2" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="../Home/slide03.jpeg" alt="Slide 3" style="width:100%">
+    </div>
+  </div>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
   </div>
 
 
-<!-- The App Section -->
-<div class="container">
-  <div class="row">
-    <div class="column-66">
-      <h1 class="xlarge-font" style="color: white;"><b>Why Choose Us?</b></h1>
-      <h1 class="large-font" style="color:rgba(241, 28, 209, 0.913);"><b>Personalized Approach</b></h1>
-      <span style=" color: rgba(14, 158, 50, 0.95);" class="large-font">Your success is our priority</span> 
-      <!-- <p style="color: bisque;">No two clients are the same, and neither are our solutions. We take the time to understand your unique needs, tailoring our services to align with your goals and vision.</p> -->
-   <!-- <p style="color: aliceblue;"> From start to finish, our team is here to make your experience enjoyable and stress-free. We value your trust and go the extra mile to exceed your expectations.10</p> -->
-   <p style="color: white;">Why Choose Perfect Pixel Studioo for Our Services?
-    At Perfect Pixel Studioo, we’re more than just a service provider – we’re your creative and technological partner. Whether you need cutting-edge app and website development, stunning graphic designs, seamless event management, or access to a professional rented studio, we are committed to delivering excellence that meets your needs and exceeds your expectations.
-    
-    </p>
-     <a href="/ContactUs/Contact.html"> <button class="button" style="padding: 18px; color: rgb(242, 239, 239); background-color: rgb(230, 4, 246); border-radius: 15px; width: 200px;">Contact US</button></a>
-    </div>
-    <div class="column-33">
+  <!-- The App Section -->
+  <div class="container">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color: rgb(29, 238, 210);">Why Choose Us?</h1>
+        <h2 style="color: rgba(241, 28, 209, 0.913);">Personalized Approach</h2>
+        <p style="color: white;">
+          At Perfect Pixel Studioo, your success is our mission. We craft bespoke solutions tailored to your specific
+          needs. From innovative app and web development to stunning visuals and creative event management, we combine
+          expertise with passion to make your ideas come to life.
+        </p>
+        <p style="color: white;">
+          Let us partner with you to create memorable experiences and exceptional results. Your vision, our execution!
+        </p>
+        <a href="/ContactUs/Contact.html"> <button class="button"
+            style="padding: 18px; color: rgb(242, 239, 239); background-color: rgb(230, 4, 246); border-radius: 15px; width: 200px;">Contact
+            US</button></a>
+      </div>
+      <div class="column-33">
         <img src="./Perfect Pixel Website/Influencer Marketing/pexels-ron-lach-7801865.jpg" width="635" height="771">
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Clarity Section -->
-<div class="container" style="background-color:#050505">
-  <div class="row">
-    <div class="column-33">
-      <img src="./Perfect Pixel Website/Cinematic Shoot/pexels-macxconverge-24205378.jpg" alt="App" width="535" height="471">
-    </div>
-    <div class="column-66">
-      <h1 class="xlarge-font" style="color: white;"><b>Clarity</b></h1>
-      <h1 class="large-font" style="color:rgb(251, 0, 255);"><b>Pixels, who?</b></h1>
-      <h1 class="large-font" style="color:rgb(6, 148, 77);"><b>Perfect Pixel Studioo </b></h1>
-      <p style="color: white;"><span style="color: white;" class="large-font">A revolution in resolution.</span> Sharp and clear photos with the world's best photo studioo, At Perfect Pixel Studioo, we believe that every moment is worth capturing with perfection. We are a team of passionate photographers and creatives dedicated to turning your precious memories into timeless art. Whether it’s a wedding, corporate event, portrait session, or a special celebration, we specialize in creating stunning visuals that tell your story with clarity, emotion, and unmatched creativity.  At Perfect Pixel Studioo, we don’t just take photos – we create visual masterpieces. Every shot is carefully composed to reflect your unique story, personality, and emotions.    </p>
-      <button class="button" style="background-color:rgb(240, 7, 236); padding: 20px; border-radius: 15px; color: rgb(245, 242, 245); width: 220px;">Read More</button>
+  <!-- Clarity Section -->
+  <div class="container" style="background-color:#050505">
+    <div class="row">
+      <div class="column-33">
+        <img src="./Perfect Pixel Website/Cinematic Shoot/pexels-macxconverge-24205378.jpg" alt="App" width="535"
+          height="471">
+      </div>
+      <div class="column-66">
+        <h1 class="xlarge-font" style="color: rgb(31, 209, 192);"><b>Clarity</b></h1>
+        <h2 style="color: rgb(251, 0, 255);"><b>Perfect Pixel Studioo</b></h2>
+        <p style="color: white;">
+          Sharp and clear photos captured with precision. Every shot is a masterpiece that tells your story beautifully.
+          Our dedicated team of professionals ensures that each moment is immortalized with emotion and unmatched
+          creativity.
+        </p>
+        <p style="color: white;">
+          Experience the revolution in resolution with Perfect Pixel Studioo.
+        </p>
+      <a href="ContactUs/Contact.html">  <button class="button"
+        style="background-color:rgb(240, 7, 236); padding: 20px; border-radius: 15px; color: rgb(245, 242, 245); width: 220px;">Know
+        More</button></a>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- The App Section -->
-<div class="container">
-  <div class="row">
-    <div class="column-66">
-      <h1 class="" style="color: white;"><b>Our Promise </b></h1>
-     <h3 style="color:MediumSeaGreen;">Let’s work together to bring your vision to life. Contact us today!</h3> 
-     <p style="color:rgb(246, 231, 204);" class="large-font"> Choosing us means choosing a partner who’s dedicated to your success. Whether you’re looking for specific service or need a complete end-to-end solution, we’re here to guide you every step of the way.</p>
-     <!-- <p style="color: antiquewhite;" class="large-font">At Perfect Pixel Studioo, our mission is to ensure that every click creates a moment that speaks a thousand words. When you choose us, you’re choosing more than a photography service – you’re choosing a partner dedicated to capturing your memories with heart and soul. -->
-<!-- 
-Let’s make your moments unforgettable.
-Contact Perfect Pixel Studioo today and book your session with us! -->
-<!-- </p> -->
-      <a href="/ContactUs/Contact.html"><button class="button" style="padding: 15px; background-color: rgb(252, 5, 227); color: rgb(240, 233, 233); border-radius: 15px; width: 200px;">Contact US</button></a>
-    </div>
-    <div class="column-33">
-        <img src="./Perfect Pixel Website/Promotional Video/pexels-cottonbro-6883812.jpg" width="435" height="371" >
+  <!-- The App Section -->
+  <div class="container">
+    <div class="row">
+      <div class="column-66">
+        <h1 style="color: rgb(14, 213, 180);"><b>Our Promise</b></h1>
+        <h3 style="color: rgb(3, 241, 110);">Your vision, our commitment.</h3>
+        <p style="color: rgb(246, 231, 204);">
+          Partnering with us means choosing innovation, reliability, and unparalleled quality. From start to finish, we
+          are here to guide you and bring your dreams to reality.
+        </p>
+        <a href="/ContactUs/Contact.html">
+          <button class="button"style="padding: 15px; background-color: rgb(252, 5, 227); color: rgb(240, 233, 233); border-radius: 15px; width: 200px;">Get In Touch</button></a>
+      </div>
+      <div class="column-33">
+        <img src="./Perfect Pixel Website/Promotional Video/pexels-cottonbro-6883812.jpg" width="435" height="371">
+      </div>
     </div>
   </div>
-</div>
+  </div>
 
-</div>
-<h3 style="color: rgb(233, 5, 191); text-align: center; font-weight: bold; font-size: 50px;">About Us</h3>
-<section class="team-section">
-  <!-- Team Member 1 -->
-  <!-- <div class="team-member">
+  <h3 style="color: rgb(233, 5, 191); text-align: center; font-weight: bold; font-size: 50px;">About Us</h3>
+  <section class="team-section">
+    <!-- Team Member 1 -->
+    <!-- <div class="team-member">
     <img src="./AboutUs/WhatsApp Image 2025-01-05 at 3.04.29 PM.jpeg" alt="Team Member 1">
     <h3>Piyush Singh</h3>
     <p>CEO & Founder</p>
     <a href="./OurTeam/Team.html" class="btn">Meet the Team</a>
   </div> -->
-<p>
-    Welcome to our world! We are a passionate team dedicated to delivering exceptional services and crafting unique experiences. 
-    Our goal is to innovate, inspire, and leave a lasting impression.
-</p>
-<h1>Our Vision</h1>
-<p>
-    Our vision is to become a global leader in service delivery by continuously improving, adapting, and growing with our clients. 
-    We believe in building long-lasting relationships, delivering exceptional quality, and empowering our team members to think big.
-</p>
-</section>
+    <p>
+      Welcome to our world! We are a passionate team dedicated to delivering exceptional services and crafting unique
+      experiences.
+      Our goal is to innovate, inspire, and leave a lasting impression.
+    </p>
+    <h1>Our Vision</h1>
+    <p>
+      Our vision is to become a global leader in service delivery by continuously improving, adapting, and growing with
+      our clients.
+      We believe in building long-lasting relationships, delivering exceptional quality, and empowering our team members
+      to think big.
+    </p>
+  </section>
 
   <!-- Reviews Section -->
   <section class="reviews-section">
@@ -133,17 +188,17 @@ Contact Perfect Pixel Studioo today and book your session with us! -->
       </div>
     </div>
   </section>
-</div>
-<div style="text-align:center">
-  <h2>Responsive Zig Zag Layout Example</h2>
-  <p>Resize the browser window to see the effect.</p>
-</div>
+  </div>
+  <div style="text-align:center">
+    <h2>Responsive Zig Zag Layout Example</h2>
+    <p>Resize the browser window to see the effect.</p>
+  </div>
 
   <!-- Footer -->
   <footer style="color: aliceblue; background-color: #050505;">
     <p>&copy; perfectpixelstudioo. All rights reserved.</p>
     <p>
-  perfectpixelstudioo@gmail.com
+      perfectpixelstudioo@gmail.com
     </p>
     <p>
       +91 9219551291
@@ -156,21 +211,43 @@ Contact Perfect Pixel Studioo today and book your session with us! -->
   </a>
 
   <script>
-    // Slideshow functionality
-    let slideIndex = 0;
-    const showSlides = () => {
-      let slides = document.querySelectorAll(".slideshow-container img");
-      let dots = document.querySelectorAll(".dot");
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
-      slides.forEach(slide => slide.style.display = "none");
-      dots.forEach(dot => dot.classList.remove("active"));
+    // Next/previous controls
+    function plusSlides(n) {
+      slideIndex += n;
+      showSlides(slideIndex);
+    }
 
-      slideIndex = (slideIndex + 1) > slides.length ? 1 : slideIndex + 1;
+    // Thumbnail image controls
+    function currentSlide(n) {
+      slideIndex = n;
+      showSlides(slideIndex);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
       slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].classList.add("active");
-      setTimeout(showSlides, 6000);
-    };
-    showSlides();
+      dots[slideIndex - 1].className += " active";
+    }
+
+    // Auto-play functionality (Automatic Slideshow)
+    setInterval(function () {
+      plusSlides(1); // Increment the slide index and update the slides
+    }, 3000); // Change slides every 5 seconds
+
+
   </script>
 </body>
 
