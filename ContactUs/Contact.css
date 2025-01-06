@@ -1,0 +1,221 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('getintouch.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding: 30px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-left: 700px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Content Side */
+.content-side {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+    color: white;
+}
+
+.content-side h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.content-side p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.contact-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 20px;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+/* Form Side */
+.form-side {
+    flex: 1;
+    background-color: hsla(300, 4%, 9%, 0.997);
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(213, 4, 171, 0.9);
+    max-width: 500px;
+    width: 100%;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+.form-side h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding: 40px;
+    color: #ec0abbeb;
+    font-weight: lighter;
+    animation: zoomIn 1s ease-in-out;
+    padding: 20px;
+    text-align: center;
+}
+.form-side h3{
+    padding: 20px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #f0e7e7;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f004f4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .content-side, .form-side {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content-side h1 {
+        font-size: 2rem;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .content-side p {
+        font-size: 1rem;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .form-side h2 {
+        font-size: 1.8rem;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-side h1 {
+        font-size: 1.8rem;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .content-side p {
+        font-size: 0.9rem;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .form-side h2 {
+        font-size: 1.6rem;
+        padding: 20px;
+        text-align: center;
+    }
+
+    form label {
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        font-size: 0.9rem;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
+    }
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Responsive Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../Home/Home.css">
+  <link rel="stylesheet" href="./Home/animatedBackground.css">
+  <link rel="stylesheet" href="./ReviewCard/Review.css">
+  <link rel="stylesheet" href="./AboutUs/about.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* WhatsApp Button Styling */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      height: 80px;
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-float i {
+      font-size: 60px;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      .social-icons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .social-icons a {
+        font-size: 1rem;
+      }
+
+      .whatsapp-float {
+        height: 50px;
+        width: 50px;
+        bottom: 15px;
+        right: 15px;
+      }
+
+      .whatsapp-float i {
+        font-size: 25px;
+      }
+    }
+    * {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #020101;
+  padding: 20px 10px;
+}
+
+.header a {
+  /* float: left; */
+  color: rgb(247, 244, 244);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #f302bf;
+  color: rgb(240, 238, 238);
+}
+
+.header a.active {
+  background-color: rgb(251, 6, 251);
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+  </style>
+</head>
+
+<body class="animated-background">
+  <!-- Navigation Bar -->
+  <div class="header">
+    <span><img src="../Home/logo.png" height="120px" width="180px" alt="logo" class="logo"></span>
+ <div class="header-right">
+  <a href="../index.html" class="active" target="_blank">Home</a>
+  <a href="../Services/Services.html" target="_blank">Services</a>
+  <a href="../OurClients/Clients.html" target="_blank">Clients</a>
+  <a href="../OurTeam/Team.html" target="_blank">Team</a>
+  <!-- <a href="../ReviewCard/Review.html" target="_blank">Review</a> -->
+  <a href="../ContactUs/Contact.html" target="_blank">Contact</a>
+  <!-- <a href="../AboutUs/About.html" target="_blank">About Us</a> -->
+ </div>
+  </div>
+
+  <!-- Slideshow -->
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="../Home/slide001.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="../Home/slide02.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="../Home/slide03.jpeg" style="width:100%">
+    </div>
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+
+
+  <section id="team" class="team-section">
+    <div class="team-member">
+        <img src="./AboutUs/WhatsApp Image 2025-01-05 at 3.04.29 PM.jpeg" alt="Team Member 1">
+        <h3>Piyush Singh</h3>
+        <p>Founder & CEO</p>
+        <a href="./OurTeam/Team.html" target="_blank" class="btn">Meet the Team</a>
+</section>
+  <section class="reviews-section">
+    <h1>Review Cards</h1>
+
+<div class="container">
+    <div class="review-card">
+        <!-- <img src="../Perfect Pixel Website/Wedding Shoot/pexels-beauty-of-pixels-3700378-24334480.jpg" alt="Profile 1" class="profile-img"> -->
+        <h3>Priya Singh</h3>
+        <p class="review-text">"This service was amazing! The team was super helpful, and the process was seamless. Highly recommend!"</p>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+    </div>
+    <div class="review-card">
+        <!-- <img src="../Perfect Pixel Website/Wedding Shoot/pexels-chandan-kumar-644768803-17599489.jpg" alt="Profile 2" class="profile-img"> -->
+        <h3>Chandan Kumar</h3>
+        <p class="review-text">"Excellent experience. The quality exceeded my expectations, and I will definitely be coming back!"</p>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+    </div>
+    <div class="review-card">
+        <!-- <img src="../Perfect Pixel Website/Wedding Shoot/pexels-ram-rawat-327513549-13954014.jpg" alt="Profile 3" class="profile-img"> -->
+        <h3>Sneha Rawat</h3>
+        <p class="review-text">"Fantastic service, fast delivery, and top-notch quality. I'm a very satisfied customer!"</p>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+    </div>
+    <!-- <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusantium praesentium, laborum earum, temporibus aperiam maiores, culpa quibusdam necessitatibus provident hic nobis molestiae cumque quam. Maiores est eius sunt dolores?</h5> -->
+</div>
+</section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/9219551291" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    // Toggle function for responsive menu
+    function toggleNav() {
+      var nav = document.getElementById("myTopnav");
+      if (nav.className === "topnav") {
+        nav.className += " responsive";
+      } else {
+        nav.className = "topnav";
+      }
+    }
+
+    // Slideshow functionality
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 6000); // Change image every 6 seconds
+    }
+    
+  function toggleNavbar() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+
+  </script>
+</body>
+
+</html>

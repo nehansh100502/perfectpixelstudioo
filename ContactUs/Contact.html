@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="../Home/Home.css">
+    <link rel="stylesheet" href="../Home/animatedBackground.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .content-side {
+            color: #ea0395;
+        }
+
+        /* Social Icons Section */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-bottom: 60px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #f3f4f5;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #e603ea;
+        }
+
+        .social-icons i  {
+            margin-right: 8px;
+            color: #03ea07;
+            font-size: 2rem;
+        }
+        #whatsapp{
+            color: rgb(4, 185, 25);
+            padding: 10px;
+        }
+        #insta{
+            color: #ea0395;
+            padding: 10px;
+        }
+        #youtube{
+            color: red;
+            padding: 10px;
+        }
+        /* WhatsApp Button Styling */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float i {
+            font-size: 30px;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .social-icons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .social-icons a {
+                font-size: 1rem;
+            }
+
+            .whatsapp-float {
+                height: 50px;
+                width: 50px;
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .whatsapp-float i {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="contact-section">
+        <!-- Navigation Bar -->
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html" target="_blank">Home</a>
+            <a href="../OurClients/Clients.html" target="_blank">Our-Clients</a>
+            <a href="../Services/Services.html" target="_blank">Services</a>
+            <!-- <a href="../ReviewCard/Review.html" target="_blank">Review</a> -->
+            <a href="../OurTeam/Team.html" target="_blank">Our-Team</a>
+            <a href="../ContactUs/Contact.html" target="_blank" class="active">Contact Us</a>
+            <!-- <a href="../AboutUs/About.html" target="_blank">About Us</a> -->
+        </div>
+
+        <!-- Social Icons Section -->
+        <div class="container">
+            <div class="form-side">
+                <h2>Please Contact Through WhatsApp..</h2>
+                <h3>And dive into Social Work Through social Accounts..</h3>
+                <div class="social-icons">
+                    <!-- Instagram -->
+                    <a href="https://api.whatsapp.com/message/6AID4QTC34LXH1?autoload=1&app_absent=0" target="_blank" title="chat with us on WhatsApp">
+                        <i class="fab fa-whatsapp" id="whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="https://www.instagram.com/perfectpixel_studioo/?igsh=Zm53YzAzNHk1MHhi" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram" id="insta"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <!-- YouTube -->
+                    <a href="https://www.youtube.com/@perfectpixelstudioo" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube" id="youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/9219551291" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </section>
+</body>
+</html>

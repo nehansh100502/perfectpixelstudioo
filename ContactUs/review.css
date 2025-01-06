@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0e0e0e; /* Black background */
+    color: #ff66c4; /* Dark pink color for text */
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation for the body */
+}
+
+/* Top Navigation */
+.topnav {
+    background-color: #1a1a1a;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px 16px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.topnav a:hover {
+    background-color: #ff66c4;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #ff1493;
+    color: white;
+}
+
+/* Reviews Section */
+.reviews-section {
+    text-align: center;
+    padding: 50px 20px;
+    animation: fadeIn 2s ease-in-out; /* Smooth fade-in animation */
+}
+
+.reviews-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #f101b1; /* White color for the heading */
+    animation: fadeInDown 1.5s ease-in-out; /* Fade-in-down animation */
+}
+
+/* Review Cards */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation for the container */
+}
+
+.review-card {
+    background-color: #1a1a1a;
+    color: #ff66c4;
+    border: 2px solid #ff66c4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth scaling on hover */
+    animation: fadeInUp 2s ease-in-out; /* Fade-in-up animation for cards */
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* Profile Image */
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid #ff66c4;
+}
+
+/* Reviewer Name */
+.review-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* White color for names */
+}
+
+/* Review Text */
+.review-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Rating */
+.rating {
+    font-size: 1.2rem;
+    color: #ff66c4; /* Dark pink for rating stars */
+}
+
+/* Section Footer */
+.reviews-section h5 {
+    margin-top: 30px;
+    color: #cccccc; /* Light gray for footer text */
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .review-card {
+        width: 90%;
+    }
+
+    .reviews-section h1 {
+        font-size: 2rem;
+    }
+
+    .reviews-section h5 {
+        font-size: 0.9rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

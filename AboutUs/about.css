@@ -1,0 +1,113 @@
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-bottom: 120px;
+    margin-left: 10px;
+    color: #000;
+    background-color: #f0a;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+    animation: bounceIn 2.5s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #ff69b4;
+}
+
+.team-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    width: 350px;
+    height: 400px;
+    padding: 30px;
+    background-color: #111;
+    /* Darker black shade */
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(240, 0, 160, 0.7);
+}
+
+.team-member img {
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    animation: zoomIn 1.5s ease-out;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.team-member p {
+    font-size: 0.9rem;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Home/Home.css">
+    <link rel="stylesheet" href="../Home/animatedBackground.css">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000; /* Black background */
+            color: rgb(255, 255, 255); /* Dark pink color */
+        }
+
+        .container {
+            /* max-width: 1200px; */
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeInDown 1.5s ease-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in-out;
+            padding: 60px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 30px;
+            margin-bottom: 40px;
+            color: #000;
+            background-color: #f0a;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: transform 0.3s, background-color 0.3s;
+            animation: bounceIn 2.5s ease-in-out;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            background-color: #ff69b4; /* Slightly lighter pink on hover */
+        }
+
+        .team-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .team-member {
+            width: 350px;
+            height: 400px;
+            padding: 20px;
+            background-color: #111; /* Darker black shade */
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(240, 0, 160, 0.7);
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            animation: zoomIn 1.5s ease-out;
+        }
+
+        .team-member h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .team-member p {
+            font-size: 0.9rem;
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.9); opacity: 0; }
+            50% { transform: scale(1.1); opacity: 0.5; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html" target="_blank">Home</a>
+            <a href="../OurClients/Clients.html"target="_blank">Our-Clients</a>
+            <a href="../Services/Services.html" target="_blank">Services</a>
+            <!-- <a href="../ReviewCard/Review.html" target="_blank">Review</a> -->
+            <a href="../OurTeam/Team.html" target="_blank">Our-Team</a>
+            <a href="../ContactUs/Contact.html" target="_blank">Contact Us</a>
+            <!-- <a href="../AboutUs/About.html" target="_blank" class="active">About Us</a> -->
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <h1>About Us</h1>
+        <p>
+            Welcome to our world! We are a passionate team dedicated to delivering exceptional services and crafting unique experiences. 
+            Our goal is to innovate, inspire, and leave a lasting impression.
+        </p>
+        <h1>Our Vision</h1>
+
+        <p>
+            Our vision is to become a global leader in service delivery by continuously improving, adapting, and growing with our clients. 
+            We believe in building long-lasting relationships, delivering exceptional quality, and empowering our team members to think big.
+        </p>
+      
+    </div>
+</body>
+</html>
