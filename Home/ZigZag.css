@@ -1,0 +1,115 @@
+.container {
+    padding: 32px; /* Reduced padding for smaller screens */
+    color: aliceblue;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    color: white;
+    clear: both;
+}
+
+.column-66 {
+    float: left;
+    width: 100%; /* Full width on all screens */
+    color: aliceblue;
+    padding: 20px;
+    text-align: center; /* Center-align text for better readability on mobile */
+}
+
+.column-33 {
+    float: left;
+    width: 400px; /* Full width on all screens */
+    height: 400px;
+    color: antiquewhite;
+    padding: 20px;
+    text-align: center; /* Center-align text for better readability on mobile */
+}
+
+.large-font {
+    font-size: 36px; /* Adjusted size for mobile */
+    color: wheat;
+    line-height: 1.5; /* Increased line height for better readability */
+    text-align: center;
+}
+
+.xlarge-font {
+    font-size: 48px; /* Reduced size for mobile screens */
+    line-height: 1.4; /* Improve readability for larger text */
+    text-align: center;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 12px 24px; /* Adjusted padding for smaller screens */
+    font-size: 14px; /* Reduced font size for buttons */
+    cursor: pointer;
+    background-color: #04AA6D;
+    border-radius: 5px; /* Added border-radius for a modern look */
+    display: block; /* Ensure the button is block-level for better spacing */
+    margin: 10px auto; /* Center button on mobile */
+    text-align: center;
+}
+
+img {
+    display: block;
+    height: 400px;
+    width: 400px;
+    /* max-width: ; */
+    margin: auto; /* Center images on all screens */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .column-66,
+    .column-33 {
+        width: 100%; /* Full width for mobile */
+        padding: 30px; /* Reduced padding for small screens */
+    }
+
+    .large-font {
+        font-size: 10px; /* Smaller text for smaller screens */
+        padding-left: 140px;
+        padding-right: 150px;
+    }
+
+    .xlarge-font {
+        font-size: 20px; /* Adjusted for small screens */
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .button {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        padding: 10px 20px; /* Reduce padding for better fit */
+    }
+
+    .container {
+        padding: 16px; /* Reduce padding for compact screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .large-font {
+        font-size: 20px; /* Even smaller for very narrow screens */
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .xlarge-font {
+        font-size: 25px; /* Scale down further */
+        padding-left: 50px;
+        padding-right: 150px;
+    }
+
+    .button {
+        padding: 8px 16px; /* Fit smaller buttons on extra small screens */
+        font-size: 12px;
+    }
+
+    img {
+        margin: auto;
+    }
+}

@@ -1,14 +1,7 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #030303fb; /* Black background */
-    color: #fb05ce;
-    text-align: center;
-}
 
 /* Clients Section */
 .clients-section {
-    padding: 40px 20px;
-    
+    text-align: center;
     animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in for the entire section */
 }
 

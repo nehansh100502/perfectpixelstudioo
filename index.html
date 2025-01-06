@@ -5,192 +5,149 @@
   <title>Responsive Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../Home/Home.css">
+  <link rel="stylesheet" href="./Home/Home.css">
+  <link rel="stylesheet" href="./AboutUs/about.css"
   <link rel="stylesheet" href="./Home/animatedBackground.css">
-  <link rel="stylesheet" href="./ReviewCard/Review.css">
-  <link rel="stylesheet" href="./AboutUs/about.css">
+  <link rel="stylesheet" href="./ReviewCard/Review.css"
+  <link rel="stylesheet" href="./Home/ZigZag.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-  <style>
-
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    /* WhatsApp Button Styling */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      border-radius: 50%;
-      height: 80px;
-      width: 80px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-      z-index: 1000;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .whatsapp-float:hover {
-      transform: scale(1.1);
-    }
-
-    .whatsapp-float i {
-      font-size: 60px;
-    }
-
-    /* Responsive Styling */
-    @media (max-width: 768px) {
-      .social-icons {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .social-icons a {
-        font-size: 1rem;
-      }
-
-      .whatsapp-float {
-        height: 50px;
-        width: 50px;
-        bottom: 15px;
-        right: 15px;
-      }
-
-      .whatsapp-float i {
-        font-size: 25px;
-      }
-    }
-    * {box-sizing: border-box;}
-
-body { 
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.header {
-  overflow: hidden;
-  background-color: #020101;
-  padding: 20px 10px;
-}
-
-.header a {
-  /* float: left; */
-  color: rgb(247, 244, 244);
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px; 
-  line-height: 25px;
-  border-radius: 4px;
-}
-
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.header a:hover {
-  background-color: #f302bf;
-  color: rgb(240, 238, 238);
-}
-
-.header a.active {
-  background-color: rgb(251, 6, 251);
-  color: white;
-}
-
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-  
-  .header-right {
-    float: none;
-  }
-}
-  </style>
 </head>
-
-<body class="animated-background">
-  <!-- Navigation Bar -->
+<body>
+  <!-- Header -->
   <div class="header">
-    <span><img src="../Home/logo.png" height="120px" width="180px" alt="logo" class="logo"></span>
- <div class="header-right">
-  <a href="../index.html" class="active" target="_blank">Home</a>
-  <a href="../Services/Services.html" target="_blank">Services</a>
-  <a href="../OurClients/Clients.html" target="_blank">Clients</a>
-  <a href="../OurTeam/Team.html" target="_blank">Team</a>
-  <!-- <a href="../ReviewCard/Review.html" target="_blank">Review</a> -->
-  <a href="../ContactUs/Contact.html" target="_blank">Contact</a>
-  <!-- <a href="../AboutUs/About.html" target="_blank">About Us</a> -->
- </div>
+    <a href="../index.html"><img src="../Home/logo.png" alt="Logo" class="logo"></a>
+    <div class="nav-links">
+      <a href="../index.html" class="active">Home</a>
+      <a href="../Services/Services.html">Services</a>
+      <a href="../OurClients/Clients.html">Clients</a>
+      <a href="../OurTeam/Team.html">Team</a>
+      <a href="../ContactUs/Contact.html">Contact</a>
+    </div>
   </div>
 
   <!-- Slideshow -->
   <div class="slideshow-container">
-    <div class="mySlides fade">
-      <img src="../Home/slide001.jpeg" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-      <img src="../Home/slide02.jpeg" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-      <img src="../Home/slide03.jpeg" style="width:100%">
-    </div>
-  </div>
-  <br>
-
-  <div style="text-align:center">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
+    <img src="../Home/slide001.jpeg" alt="Slide 1">
+    <img src="../Home/slide02.jpeg" alt="Slide 2">
+    <img src="../Home/slide03.jpeg" alt="Slide 3">
   </div>
 
 
+<!-- The App Section -->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font" style="color: white;"><b>Why Choose Us?</b></h1>
+      <h1 class="large-font" style="color:rgba(241, 28, 209, 0.913);"><b>Personalized Approach</b></h1>
+      <span style=" color: rgba(14, 158, 50, 0.95);" class="large-font">Your success is our priority</span> 
+      <p style="color: bisque;">No two clients are the same, and neither are our solutions. We take the time to understand your unique needs, tailoring our services to align with your goals and vision.</p>
+   <p style="color: aliceblue;"> From start to finish, our team is here to make your experience enjoyable and stress-free. We value your trust and go the extra mile to exceed your expectations.10</p>
+   <p style="color: white;">Why Choose Perfect Pixel Studioo for Our Services?
+    At Perfect Pixel Studioo, we’re more than just a service provider – we’re your creative and technological partner. Whether you need cutting-edge app and website development, stunning graphic designs, seamless event management, or access to a professional rented studio, we are committed to delivering excellence that meets your needs and exceeds your expectations.
+    
+    </p>
+     <a href="/ContactUs/Contact.html"> <button class="button" style="padding: 18px; color: rgb(242, 239, 239); background-color: rgb(230, 4, 246); border-radius: 15px; width: 200px;">Contact US</button></a>
+    </div>
+    <div class="column-33">
+        <img src="./Perfect Pixel Website/Influencer Marketing/pexels-ron-lach-7801865.jpg" width="635" height="771">
+    </div>
+  </div>
+</div>
 
-  <section id="team" class="team-section">
-    <div class="team-member">
-        <img src="./AboutUs/WhatsApp Image 2025-01-05 at 3.04.29 PM.jpeg" alt="Team Member 1">
-        <h3>Piyush Singh</h3>
-        <p>Founder & CEO</p>
-        <a href="./OurTeam/Team.html" target="_blank" class="btn">Meet the Team</a>
+<!-- Clarity Section -->
+<div class="container" style="background-color:#050505">
+  <div class="row">
+    <div class="column-33">
+      <img src="./Perfect Pixel Website/Cinematic Shoot/pexels-macxconverge-24205378.jpg" alt="App" width="535" height="471">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font" style="color: white;"><b>Clarity</b></h1>
+      <h1 class="large-font" style="color:rgb(251, 0, 255);"><b>Pixels, who?</b></h1>
+      <h1 class="large-font" style="color:rgb(6, 148, 77);"><b>Perfect Pixel Studioo </b></h1>
+      <p style="color: white;"><span style="color: white;" class="large-font">A revolution in resolution.</span> Sharp and clear photos with the world's best photo studioo, At Perfect Pixel Studioo, we believe that every moment is worth capturing with perfection. We are a team of passionate photographers and creatives dedicated to turning your precious memories into timeless art. Whether it’s a wedding, corporate event, portrait session, or a special celebration, we specialize in creating stunning visuals that tell your story with clarity, emotion, and unmatched creativity.  At Perfect Pixel Studioo, we don’t just take photos – we create visual masterpieces. Every shot is carefully composed to reflect your unique story, personality, and emotions.    </p>
+      <button class="button" style="background-color:rgb(240, 7, 236); padding: 20px; border-radius: 15px; color: rgb(245, 242, 245); width: 220px;">Read More</button>
+    </div>
+  </div>
+</div>
+
+<!-- The App Section -->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="" style="color: white;"><b>Our Promise </b></h1>
+     <h3 style="color:MediumSeaGreen;">Let’s work together to bring your vision to life. Contact us today!</h3> 
+     <p style="color:rgb(246, 231, 204);" class="large-font"> Choosing us means choosing a partner who’s dedicated to your success. Whether you’re looking for specific service or need a complete end-to-end solution, we’re here to guide you every step of the way.</p>
+     <!-- <p style="color: antiquewhite;" class="large-font">At Perfect Pixel Studioo, our mission is to ensure that every click creates a moment that speaks a thousand words. When you choose us, you’re choosing more than a photography service – you’re choosing a partner dedicated to capturing your memories with heart and soul. -->
+<!-- 
+Let’s make your moments unforgettable.
+Contact Perfect Pixel Studioo today and book your session with us! -->
+<!-- </p> -->
+      <a href="/ContactUs/Contact.html"><button class="button" style="padding: 15px; background-color: rgb(252, 5, 227); color: rgb(240, 233, 233); border-radius: 15px; width: 200px;">Contact US</button></a>
+    </div>
+    <div class="column-33">
+        <img src="./Perfect Pixel Website/Promotional Video/pexels-cottonbro-6883812.jpg" width="435" height="371" >
+    </div>
+  </div>
+</div>
+
+</div>
+<h3 style="color: rgb(233, 5, 191); text-align: center; font-weight: bold; font-size: 50px;">About Us</h3>
+<section class="team-section">
+  <!-- Team Member 1 -->
+  <!-- <div class="team-member">
+    <img src="./AboutUs/WhatsApp Image 2025-01-05 at 3.04.29 PM.jpeg" alt="Team Member 1">
+    <h3>Piyush Singh</h3>
+    <p>CEO & Founder</p>
+    <a href="./OurTeam/Team.html" class="btn">Meet the Team</a>
+  </div> -->
+<p>
+    Welcome to our world! We are a passionate team dedicated to delivering exceptional services and crafting unique experiences. 
+    Our goal is to innovate, inspire, and leave a lasting impression.
+</p>
+<h1>Our Vision</h1>
+<p>
+    Our vision is to become a global leader in service delivery by continuously improving, adapting, and growing with our clients. 
+    We believe in building long-lasting relationships, delivering exceptional quality, and empowering our team members to think big.
+</p>
 </section>
+
+  <!-- Reviews Section -->
   <section class="reviews-section">
     <h1>Review Cards</h1>
-
-<div class="container">
-    <div class="review-card">
-        <!-- <img src="../Perfect Pixel Website/Wedding Shoot/pexels-beauty-of-pixels-3700378-24334480.jpg" alt="Profile 1" class="profile-img"> -->
+    <div class="container">
+      <div class="review-card">
         <h3>Priya Singh</h3>
-        <p class="review-text">"This service was amazing! The team was super helpful, and the process was seamless. Highly recommend!"</p>
+        <p>"This service was amazing! The team was super helpful, and the process was seamless. Highly recommend!"</p>
         <div class="rating">⭐⭐⭐⭐⭐</div>
-    </div>
-    <div class="review-card">
-        <!-- <img src="../Perfect Pixel Website/Wedding Shoot/pexels-chandan-kumar-644768803-17599489.jpg" alt="Profile 2" class="profile-img"> -->
+      </div>
+      <div class="review-card">
         <h3>Chandan Kumar</h3>
-        <p class="review-text">"Excellent experience. The quality exceeded my expectations, and I will definitely be coming back!"</p>
+        <p>"Excellent experience. The quality exceeded my expectations, and I will definitely be coming back!"</p>
         <div class="rating">⭐⭐⭐⭐⭐</div>
-    </div>
-    <div class="review-card">
-        <!-- <img src="../Perfect Pixel Website/Wedding Shoot/pexels-ram-rawat-327513549-13954014.jpg" alt="Profile 3" class="profile-img"> -->
+      </div>
+      <div class="review-card">
         <h3>Sneha Rawat</h3>
-        <p class="review-text">"Fantastic service, fast delivery, and top-notch quality. I'm a very satisfied customer!"</p>
+        <p>"Fantastic service, fast delivery, and top-notch quality. I'm a very satisfied customer!"</p>
         <div class="rating">⭐⭐⭐⭐⭐</div>
+      </div>
     </div>
-    <!-- <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusantium praesentium, laborum earum, temporibus aperiam maiores, culpa quibusdam necessitatibus provident hic nobis molestiae cumque quam. Maiores est eius sunt dolores?</h5> -->
+  </section>
 </div>
-</section>
+<div style="text-align:center">
+  <h2>Responsive Zig Zag Layout Example</h2>
+  <p>Resize the browser window to see the effect.</p>
+</div>
+
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Your Company. All rights reserved.</p>
+  <footer style="color: aliceblue; background-color: #050505;">
+    <p>&copy; perfectpixelstudioo. All rights reserved.</p>
+    <p>
+  perfectpixelstudioo@gmail.com
+    </p>
+    <p>
+      +91 9219551291
+    </p>
   </footer>
 
   <!-- WhatsApp Floating Button -->
@@ -199,47 +156,21 @@ body {
   </a>
 
   <script>
-    // Toggle function for responsive menu
-    function toggleNav() {
-      var nav = document.getElementById("myTopnav");
-      if (nav.className === "topnav") {
-        nav.className += " responsive";
-      } else {
-        nav.className = "topnav";
-      }
-    }
-
     // Slideshow functionality
     let slideIndex = 0;
-    showSlides();
+    const showSlides = () => {
+      let slides = document.querySelectorAll(".slideshow-container img");
+      let dots = document.querySelectorAll(".dot");
 
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1 }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
+      slides.forEach(slide => slide.style.display = "none");
+      dots.forEach(dot => dot.classList.remove("active"));
+
+      slideIndex = (slideIndex + 1) > slides.length ? 1 : slideIndex + 1;
       slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-      setTimeout(showSlides, 6000); // Change image every 6 seconds
-    }
-    
-  function toggleNavbar() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-
-
+      dots[slideIndex - 1].classList.add("active");
+      setTimeout(showSlides, 6000);
+    };
+    showSlides();
   </script>
 </body>
 

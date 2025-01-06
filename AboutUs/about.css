@@ -1,10 +1,10 @@
+/* General Styles */
 .btn {
     display: inline-block;
     padding: 10px 30px;
-    margin-bottom: 120px;
-    margin-left: 10px;
-    color: #000;
+    color: #fdfbfb;
     background-color: #f0a;
+    margin-bottom: 40px;
     border: none;
     border-radius: 25px;
     text-align: center;
@@ -23,41 +23,63 @@
 
 .team-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    background-color: #1a1a1a;
+    color: #f50cb7d3;
+    padding: 20px; /* Added padding for mobile */
+}
+
+.team-section h1 {
+    color: #f606e6;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.team-section p {
+    color: #f2f6f6dc;
+    font-size: 1.2rem;
+    padding: 0 20px; /* Removed fixed width and added padding for better responsiveness */
+    margin-bottom: 20px;
+    line-height: 1.5; /* Added line height for better readability */
 }
 
 .team-member {
-    width: 350px;
-    height: 400px;
-    padding: 30px;
+    width: 80%; /* Default width for better responsiveness */
+    max-width: 700px; /* Limits width for larger screens */
+    height: auto;
     background-color: #111;
-    /* Darker black shade */
+    color: #f2eded;
+    transform: translateY(0); /* Default value for smoother experience */
+    box-shadow: 0 10px 20px rgba(240, 0, 160, 0.7);
     border-radius: 15px;
+    margin: 20px 10px; /* Added margin for spacing on smaller screens */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .team-member:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(240, 0, 160, 0.7);
+    box-shadow: 0 10px 20px rgba(245, 76, 189, 0.972);
 }
 
 .team-member img {
-    width: 80%;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    height: 180px;
+    width: 180px;
+    border-radius: 20%;
     animation: zoomIn 1.5s ease-out;
 }
 
 .team-member h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    color: #f1ecec;
     margin: 10px 0;
 }
 
 .team-member p {
     font-size: 0.9rem;
+    padding: 0 10px;
 }
 
 /* Keyframes for animations */
@@ -65,7 +87,6 @@
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
@@ -76,7 +97,6 @@
         opacity: 0;
         transform: translateY(-30px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -88,12 +108,10 @@
         transform: scale(0.9);
         opacity: 0;
     }
-
     50% {
         transform: scale(1.1);
         opacity: 0.5;
     }
-
     100% {
         transform: scale(1);
         opacity: 1;
@@ -105,9 +123,76 @@
         transform: scale(0.5);
         opacity: 0;
     }
-
     to {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-section {
+        padding: 10px;
+    }
+
+    .team-section h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .team-section p {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    .team-member {
+        width: 90%;
+        margin: 15px auto;
+        padding: 20px;
+    }
+
+    .team-member img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .team-section p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .team-member {
+        width: 100%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .team-member img {
+        width: 60%;
+        margin: auto;
+    }
+
+    .team-member h3 {
+        font-size: 1rem;
+    }
+
+    .team-member p {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 6px 15px;
+        font-size: 0.8rem;
     }
 }

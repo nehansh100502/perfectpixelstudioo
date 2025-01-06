@@ -1,6 +1,7 @@
 /* Reviews Section */
 .reviews-section {
     text-align: center;
+    background-color: #1a1a1a;
     padding: 50px 20px;
     animation: fadeIn 2s ease-in-out; /* Smooth fade-in animation */
 }

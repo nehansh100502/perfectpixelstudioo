@@ -1,61 +1,15 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('getintouch.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-}
 
-/* Contact Section */
 .contact-section {
-    display: flex;
     justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    height: 100vh;
-    padding: 30px;
     animation: fadeIn 1.5s ease-in-out;
+  
 }
 
 .container {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    margin-left: 700px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    width: 100%;
-}
-
-/* Content Side */
-.content-side {
-    flex: 1;
-    max-width: 500px;
-    padding: 20px;
-    color: white;
-}
-
-.content-side h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    animation: fadeInDown 1.5s ease-in-out;
-}
-
-.content-side p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    animation: fadeIn 2s ease-in-out;
-}
-
-.contact-image {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin-top: 20px;
-    animation: fadeIn 2.5s ease-in-out;
+    margin-top: 120px;
 }
 
 /* Form Side */
@@ -65,7 +19,7 @@ body {
     padding: 40px;
     border-radius: 10px;
     color: white;
-    box-shadow: 0 4px 6px rgba(213, 4, 171, 0.9);
+    box-shadow: 0 4px 6px rgba(122, 86, 115, 0.9);
     max-width: 500px;
     width: 100%;
     animation: bounceIn 1.5s ease-in-out;
